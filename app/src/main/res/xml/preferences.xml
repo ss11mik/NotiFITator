@@ -1,0 +1,96 @@
+<!--
+  ~ This file is part of the NotiFITator distribution (https://github.com/ss11mik/NotiFITator).
+  ~  Copyright (c) 2020 Ondřej Mikula.
+  ~
+  ~  This program is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 3.
+  ~
+  ~  This program is distributed in the hope that it will be useful, but
+  ~  WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~  General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/login_header">
+
+        <EditTextPreference
+            app:key="username"
+            app:icon="@drawable/ic_username"
+            app:title="@string/username_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:icon="@drawable/ic_password"
+            app:key="password"
+            android:persistent="false"
+            app:title="@string/password_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <ListPreference
+            app:key="sync_period"
+            app:icon="@drawable/ic_sync"
+            android:defaultValue="86400000"
+            app:title="@string/sync_title"
+            android:entries="@array/sync_entries"
+            android:entryValues="@array/sync_entry_values"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="sync_cellular"
+            app:icon="@drawable/ic_cellular"
+            android:title="@string/sync_cellular_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/notifications_header">
+
+        <SwitchPreferenceCompat
+            app:key="notif_that_day"
+            app:defaultValue="true"
+            app:icon="@drawable/ic_today"
+            app:title="@string/notif_that_day_title" />
+
+        <SwitchPreferenceCompat
+            app:key="notif_day_before"
+            app:icon="@drawable/ic_tomorrow"
+            app:title="@string/notif_day_before_title" />
+
+
+        <cz.webz.ss11mik.notifitator.ui.TimePreference
+            app:key="notification_time"
+            android:defaultValue="21600000"
+            app:title="@string/notif_time_title"
+            app:icon="@drawable/ic_time"
+            style="@style/DialogPreference" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/about_header">
+
+        <ListPreference
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_entry_values"
+            app:key="theme"
+            android:title="@string/theme_title"
+            app:icon="@drawable/ic_theme"
+            app:useSimpleSummaryProvider="true" />
+
+        <cz.webz.ss11mik.notifitator.ui.AboutPreference
+            app:icon="@drawable/ic_ss11mik"
+            app:key="developer"
+            app:summary="@string/about_summary"
+            app:title="@string/app_name" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

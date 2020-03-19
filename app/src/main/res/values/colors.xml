@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the NotiFITator distribution (https://github.com/ss11mik/NotiFITator).
+  ~  Copyright (c) 2020 Ondřej Mikula.
+  ~
+  ~  This program is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 3.
+  ~
+  ~  This program is distributed in the hope that it will be useful, but
+  ~  WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~  General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <color name="colorPrimary">#00B0C5</color>
+    <color name="colorPrimaryDark">#038296</color>
+    <color name="colorAccent">#08966E</color>
+
+    <color name="date">#038296</color>
+
+    <color name="task">#00897B</color>
+    <color name="accr">#F9A825</color>
+    <color name="exam">#c62828</color>
+    <color name="survey">#1E88E5</color>
+    <color name="info">#546E7A</color>
+
+
+    <color name="course0">#F4511E</color>
+    <color name="course1">#FDD835</color>
+    <color name="course2">#43A047</color>
+    <color name="course3">#00897B</color>
+    <color name="course4">#039BE5</color>
+    <color name="course5">#5E35B1</color>
+    <color name="course6">#D81B60</color>
+    <color name="course7">#00ACC1</color>
+</resources>

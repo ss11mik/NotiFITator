@@ -1,0 +1,53 @@
+<!--
+  ~ This file is part of the NotiFITator distribution (https://github.com/ss11mik/NotiFITator).
+  ~  Copyright (c) 2020 Ondřej Mikula.
+  ~
+  ~  This program is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 3.
+  ~
+  ~  This program is distributed in the hope that it will be useful, but
+  ~  WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~  General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TitleFont">
+        <item name="android:fontFamily">@font/hemi_head</item>
+    </style>
+
+    <style name="SettingsTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SettingsThemeDark" parent="Theme.MaterialComponents">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="DialogPreference">
+        <item name="positiveButtonText">@android:string/ok</item>
+        <item name="negativeButtonText">@android:string/cancel</item>
+    </style>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of the NotiFITator distribution (https://github.com/ss11mik/NotiFITator).
+  ~  Copyright (c) 2020 Ondřej Mikula.
+  ~
+  ~  This program is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 3.
+  ~
+  ~  This program is distributed in the hope that it will be useful, but
+  ~  WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~  General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string name="app_name">NotiFITátor</string>
+    <string name="title_activity_settings">Nastavení</string>
+
+    <string name="tomorrow">Zítra</string>
+    <string name="today">Dnes</string>
+
+    <string name="err_fetch">Chyba při synchronizaci</string>
+    <string name="err_empty">Zatím nemáte načteny termíny.\nPřejděte do nastavení, vyplňte přihlašovací údaje\na potáhněte dolů, abyste synchronizovali termíny.</string>
+
+    <string name="url_wis">https://wis.fit.vutbr.cz/FIT/st/news-c.php.cs</string>
+
+
+    <!-- Preference Titles -->
+    <string name="login_header">Přihlášení</string>
+    <string name="sync_header">Synchronizace</string>
+    <string name="notifications_header">Notifikace</string>
+    <string name="about_header">O aplikaci</string>
+
+    <!-- Login Preferences -->
+    <string name="username_title">Login</string>
+    <string name="password_title">Heslo</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Interval synchronizace</string>
+
+    <string-array name="sync_entries">
+        <item>"nesynchronizovat"</item>
+        <item>"denně"</item>
+        <item>"jednou za dva dny"</item>
+        <item>"dvakrát týdně"</item>
+        <item>"týdně"</item>
+    </string-array>
+
+    <string-array name="sync_entry_values">
+        <item>-1</item>
+        <item>86400000</item>
+        <item>172800000</item>
+        <item>302400000</item>
+        <item>604800000</item>
+    </string-array>
+
+    <string name="theme_title">Barevné schéma</string>
+
+    <string-array name="theme_entries">
+        <item>"Světlé"</item>
+        <item>"Tmavé"</item>
+    </string-array>
+
+    <string name="sync_cellular_title">Synchronizovat přes mobilní sítě</string>
+
+    <!-- Notification Preferences -->
+    <string name="notif_that_day_title">Notifikace daný den</string>
+    <string name="notif_day_before_title">Notifikace den předem</string>
+    <string name="notif_time_title">Čas notifikace</string>
+    <string name="blink_led">Rozsvítit notifikační LED</string>
+
+    <string name="about_summary">ss11mik, 2020</string>
+</resources>

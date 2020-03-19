@@ -1,0 +1,84 @@
+<!--
+  ~ This file is part of the NotiFITator distribution (https://github.com/ss11mik/NotiFITator).
+  ~  Copyright (c) 2020 Ondřej Mikula.
+  ~
+  ~  This program is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 3.
+  ~
+  ~  This program is distributed in the hope that it will be useful, but
+  ~  WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~  General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string name="app_name">NotiFITátor</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="tomorrow">Tomorrow</string>
+    <string name="today">Today</string>
+
+    <string name="err_fetch">Unable to fetch</string>
+    <string name="err_empty">No events to show.\nGo to settings, fill in credentials\nand swipe down to fetch news.</string>
+
+
+    <string name="url_wis">https://wis.fit.vutbr.cz/FIT/st/news-c.php.en</string>
+    <string name="url_ss11mik" translatable="false">http://ss11mik.webz.cz/?app=notiFITator</string>
+
+
+    <!-- Preference Titles -->
+    <string name="login_header">Login</string>
+    <string name="sync_header">Sync</string>
+    <string name="notifications_header">Notifications</string>
+    <string name="about_header">About</string>
+
+    <!-- Login Preferences -->
+    <string name="username_title">User name</string>
+    <string name="password_title">Password</string>
+    <string name="mock_password" translatable="false">••••••••</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync period</string>
+
+    <string-array name="sync_entries">
+        <item>"no sync"</item>
+        <item>"daily"</item>
+        <item>"once in two days"</item>
+        <item>"twice a week"</item>
+        <item>"weekly"</item>
+    </string-array>
+
+    <string-array name="sync_entry_values">
+        <item>-1</item>
+        <item>86400000</item>
+        <item>172800000</item>
+        <item>302400000</item>
+        <item>604800000</item>
+    </string-array>
+
+    <string name="theme_title">App theme</string>
+
+    <string-array name="theme_entries">
+        <item>"Light"</item>
+        <item>"Dark"</item>
+    </string-array>
+
+    <string-array name="theme_entry_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="sync_cellular_title">Sync over cellular</string>
+
+    <!-- Notification Preferences -->
+    <string name="notif_that_day_title">Notify that day</string>
+    <string name="notif_day_before_title">Notify day before</string>
+    <string name="notif_time_title">Notification time</string>
+    <string name="blink_led">Blink notification LED</string>
+
+    <string name="about_summary">ss11mik, 2020</string>
+</resources>

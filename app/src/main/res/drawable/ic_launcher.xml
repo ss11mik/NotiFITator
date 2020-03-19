@@ -1,0 +1,40 @@
+<!--
+  ~ This file is part of the NotiFITator distribution (https://github.com/ss11mik/NotiFITator).
+  ~  Copyright (c) 2020 Ondřej Mikula.
+  ~
+  ~  This program is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, version 3.
+  ~
+  ~  This program is distributed in the hope that it will be useful, but
+  ~  WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+  ~  General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with this program. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:pathData="M0,192l246.528,156.896c2.816,2.08 6.144,3.104 9.472,3.104s6.656,-1.024 9.472,-3.104L512,192L265.6,3.2c-5.696,-4.256 -13.504,-4.256 -19.2,0L0,192z"
+      android:fillColor="#64B5F6"/>
+  <path
+      android:pathData="M416,0H96C78.368,0 64,14.368 64,32v352c0,8.832 7.168,16 16,16h352c8.832,0 16,-7.168 16,-16V32C448,14.368 433.664,0 416,0z"
+      android:fillColor="#ECEFF1"/>
+  <path
+      android:pathData="M265.472,348.896c-2.816,2.08 -6.144,3.104 -9.472,3.104s-6.656,-1.024 -9.472,-3.104L0,192v288c0,17.664 14.336,32 32,32h448c17.664,0 32,-14.336 32,-32V192L265.472,348.896z"
+      android:fillColor="#1E88E5"/>
+  <path
+      android:pathData="M480,512H32c-17.952,0 -32,-14.048 -32,-32c0,-5.088 2.432,-9.888 6.528,-12.896l240,-160c2.816,-2.08 6.144,-3.104 9.472,-3.104s6.656,1.024 9.472,3.104l240,160C509.568,470.112 512,474.912 512,480C512,497.952 497.952,512 480,512z"
+      android:fillColor="#2196F3"/>
+  <path
+      android:pathData="M125.438,73.906L119.281,103.156L229.5,103.156L235.656,73.906L125.438,73.906zM256.719,73.906L225.25,222.844L258.688,222.844L290.156,73.906L256.719,73.906zM308.75,73.906L302.594,103.156L338.656,103.156L313.375,222.844L346.813,222.844L372.125,103.156L408.406,103.156L414.563,73.906L308.75,73.906zM117.063,114.156L93.969,222.844L128.5,222.844L141.063,163.656L197.156,163.656L202.438,138.813L146.344,138.813L151.594,114.156L117.063,114.156z"
+      android:fillColor="#2196f3"
+      android:strokeColor="#00000000"
+      android:fillAlpha="1"/>
+</vector>
