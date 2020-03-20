@@ -52,24 +52,11 @@
         <item>"weekly"</item>
     </string-array>
 
-    <string-array name="sync_entry_values">
-        <item>-1</item>
-        <item>86400000</item>
-        <item>172800000</item>
-        <item>302400000</item>
-        <item>604800000</item>
-    </string-array>
-
     <string name="theme_title">App theme</string>
 
     <string-array name="theme_entries">
         <item>"Light"</item>
         <item>"Dark"</item>
-    </string-array>
-
-    <string-array name="theme_entry_values">
-        <item>0</item>
-        <item>1</item>
     </string-array>
 
     <string name="sync_cellular_title">Sync over cellular</string>

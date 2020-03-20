@@ -16,88 +16,97 @@
   ~  along with this program. If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarMaim"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/AppbarMain"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            app:titleTextColor="@color/design_default_color_background"
-            style="@style/Theme.MaterialComponents.Bridge"
-            app:theme="@style/TitleFont" />
+            android:layout_height="wrap_content">
 
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/swipe"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clipChildren="false"
-            android:clipToPadding="false">
-
-            <TextView
-                android:id="@+id/txtNoEvents"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="@string/err_empty" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerEvents"
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarMain"
+                style="@style/Theme.MaterialComponents.Bridge"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-            </androidx.recyclerview.widget.RecyclerView>
-
-            <com.google.android.material.chip.ChipGroup
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right|top"
-                android:layout_margin="16dp"
-                android:animateLayoutChanges="true"
-                android:clipChildren="false"
-                android:clipToPadding="false">
+                android:background="@color/colorPrimary"
+                app:theme="@style/TitleFont"
+                app:titleTextColor="@color/design_default_color_background" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chpFilterCourse"
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtNoEvents"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/primary_text_dark"
-                    android:theme="@style/Theme.MaterialComponents.Light"
-                    android:visibility="gone"
-                    app:closeIconTint="@android:color/white"
-                    app:closeIconVisible="true" />
-            </com.google.android.material.chip.ChipGroup>
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/err_empty" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_margin="16dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:onClick="goToSettings"
-                app:tint="@color/design_default_color_background"
-                android:src="@drawable/ic_settings" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerEvents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                </androidx.recyclerview.widget.RecyclerView>
 
-</LinearLayout>
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="16dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="goToSettings"
+                    android:src="@drawable/ic_settings"
+                    app:tint="@color/design_default_color_background" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:animateLayoutChanges="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_anchor="@id/AppbarMain"
+        app:layout_anchorGravity="bottom|right">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpFilterCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/primary_text_dark"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:visibility="invisible"
+            app:closeIconTint="@android:color/white"
+            app:closeIconVisible="true" />
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -70,8 +70,7 @@
             app:key="notification_time"
             android:defaultValue="21600000"
             app:title="@string/notif_time_title"
-            app:icon="@drawable/ic_time"
-            style="@style/DialogPreference" />
+            app:icon="@drawable/ic_time" />
 
     </PreferenceCategory>
 
@@ -83,6 +82,7 @@
             app:key="theme"
             android:title="@string/theme_title"
             app:icon="@drawable/ic_theme"
+            android:defaultValue="0"
             app:useSimpleSummaryProvider="true" />
 
         <cz.webz.ss11mik.notifitator.ui.AboutPreference
